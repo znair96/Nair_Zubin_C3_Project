@@ -37,7 +37,6 @@ class RestaurantServiceTest {
         restaurant = service.addRestaurant("Amelie's cafe","Chennai",openingTime,closingTime);
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
-        System.out.println(restaurantNotFoundException.class);
         assertThrows(restaurantNotFoundException.class,()->service.findRestaurantByName("XYZ cafe"));
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
